@@ -174,6 +174,10 @@
 // console.log("Text:", str)
 // console.log("There are", count, "occurrence(s) of word 'the'",)
 
+
+
+
+
 // CHAPTER 26 to 30
 
 // Question # 1
@@ -240,3 +244,223 @@
 // } else {
 //     console.log("Sorry! That is not correct. Try again")
 // }
+
+
+
+
+
+// CHAPTER 31 to 34
+
+// Question # 1
+// var now = new Date();
+// console.log(now);
+
+// Question # 2
+// var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// console.log("Current month: " + months[now.getMonth()]);
+
+// Question # 3
+// var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// console.log("Today is " + days[now.getDay()]);
+
+// Question # 4
+// var dayNum = now.getDay();
+// if (dayNum === 0 || dayNum === 6) console.log("It's Fun day");
+// else console.log("It's working day");
+
+// Question # 5
+// var currentDate = now.getDate();
+// if (currentDate < 16) console.log("First fifteen days of the month");
+// else console.log("Last days of the month");
+
+// Question # 6
+// var elapsedMs = now.getTime();
+// console.log("Elapsed minutes since 1970: " + elapsedMs / (1000 * 60));
+
+// Question # 7
+// var hours = now.getHours();
+// if (hours < 12) console.log("Its AM");
+// else console.log("Its PM");
+
+// Question # 8
+// var laterDate = new Date(2020, 11, 31);
+// console.log("Later date: " + laterDate);
+
+// Question # 9
+// var ramadan = new Date(2015, 5, 18);
+// var today = new Date(2015, 11, 5);
+// var daysPassed = (today - ramadan) / (1000 * 60 * 60 * 24);
+// console.log(Math.floor(daysPassed) + " days have passed");
+
+// Question # 10
+// var start2015 = new Date(2015, 0, 1);
+// var refDate = new Date(2015, 11, 5, 22, 50, 16);
+// console.log((refDate - start2015) / 1000 + " seconds passed");
+
+// Question # 11
+// console.log("current date: " + now);
+// var oneHourBack = new Date(now);
+// oneHourBack.setHours(now.getHours() - 1);
+// console.log("1 hour ago: " + oneHourBack);
+
+// Question # 12
+// var hundredBack = new Date(now);
+// hundredBack.setFullYear(now.getFullYear() - 100);
+// console.log("100 years back: " + hundredBack);
+
+// Question # 13
+// var age = prompt("Enter your age");
+// console.log("Your birth year is " + (new Date().getFullYear() - age));
+
+// Question # 14
+// console.log("Customer Name: ABC Customer");
+// console.log("Month: February");
+// console.log("Number of units: 410");
+// console.log("Charges per unit: 16");
+// console.log("Net Amount: " + 410 * 16);
+// console.log("Late surcharge: 350");
+// console.log("Gross Amount: " + (410 * 16 + 350));
+
+
+
+
+
+// CHAPTER 35 to 38on showDate() {
+//     var now = new Date();
+//     console.log(now);
+// }
+// showDate
+
+// Question # 1 Current date & time
+// functi();
+
+// Question # 2 Greet user
+// function greet(fname, lname) {
+//     var full = fname + " " + lname;
+//     console.log("Hello " + full);
+// }
+// greet("Ali", "Khan");
+
+// Question # 3 Add two numbers
+// function add() {
+//     var a = Number(prompt("Enter first"));
+//     var b = Number(prompt("Enter second"));
+//     var sum = a + b;
+//     console.log("Sum is " + sum);
+// }
+// add();
+
+// Question # 4 Calculator
+// function calc(a, b, op) {
+//     var result;
+//     if (op === "+") result = a + b;
+//     if (op === "-") result = a - b;
+//     if (op === "*") result = a * b;
+//     if (op === "/") result = a / b;
+//     console.log(a + " " + op + " " + b + " = " + result);
+// }
+// calc(10, 5, "+");
+
+// Question # 5 Square
+// function square(n) {
+//     var ans = n * n;
+//     console.log("Square is " + ans);
+// }
+// square(5);
+
+// Question # 6 Factorial
+// function fact(n) {
+//     var ans = 1;
+//     for (var i = 1; i <= n; i++) {
+//         ans = ans * i;
+//     }
+//     console.log("Factorial is " + ans);
+// }
+// fact(5);
+
+// Question # 7 Counting
+// function count(start, end) {
+//     for (var i = start; i <= end; i++) {
+//         console.log(i);
+//     }
+// }
+// count(1, 10);
+
+// Question # 8 Hypotenuse
+// function hyp(base, perp) {
+//     function square(x) {
+//         return x * x;
+//     }
+//     var h = Math.sqrt(square(base) + square(perp));
+//     console.log("Hypotenuse is " + h);
+// }
+// hyp(3, 4);
+
+// Question # 9 Area of rectangle
+// function area(w, h) {
+//     var a = w * h;
+//     console.log("Area is " + a);
+// }
+// area(15, 25);
+
+// Question # 10 Palindrome
+// function palindrome(str) {
+//     var rev = "";
+//     for (var i = str.length - 1; i >= 0; i--) {
+//         rev = rev + str[i];
+//     }
+//     if (str === rev) {
+//         console.log(str + " is palindrome");
+//     } else {
+//         console.log(str + " is not palindrome");
+//     }
+// }
+// palindrome("madam");
+// palindrome("hello");
+
+// Question # 11 Capitalize first letter
+// function capitalize(str) {
+//     var words = str.split(" ");
+//     var out = "";
+//     for (var i = 0; i < words.length; i++) {
+//         var first = words[i].charAt(0).toUpperCase();
+//         var rest = words[i].slice(1);
+//         out = out + first + rest + " ";
+//     }
+//     console.log(out);
+// }
+// capitalize("the quick brown fox");
+
+// Question # 12 Longest word
+// function longest(str) {
+//     var words = str.split(" ");
+//     var big = "";
+//     for (var i = 0; i < words.length; i++) {
+//         if (words[i].length > big.length) {
+//             big = words[i];
+//         }
+//     }
+//     console.log("Longest word is " + big);
+// }
+// longest("Web Development Tutorial");
+
+// Question # 13 Count letter
+// function countLetter(str, letter) {
+//     var c = 0;
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] === letter) {
+//             c++;
+//         }
+//     }
+//     console.log(letter + " appears " + c + " times");
+// }
+// countLetter("JSResourceS.com", "o");
+
+// Question # 14 Circle
+// function cir(r) {
+//     var c = 2 * 3.14 * r;
+//     var a = 3.14 * r * r;
+//     console.log("Circumference is " + c);
+//     console.log("Area is " + a);
+// }
+// cir(5);
