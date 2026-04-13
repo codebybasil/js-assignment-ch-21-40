@@ -464,3 +464,98 @@
 //     console.log("Area is " + a);
 // }
 // cir(5);
+
+
+
+
+
+
+
+
+
+// CHAPTER 38 to 40
+
+// Q1: power function
+// function power(a, b) {
+//     let result = 1;
+//     for (let i = 1; i <= b; i++) {
+//         result = result * a;
+//     }
+//     return result;
+// }
+// power(2, 3); // 8
+
+// Q2: leap year
+// function leapYear(year) {
+//     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+//         return "Leap Year";
+//     } else {
+//         return "Not Leap Year";
+//     }
+// }
+// leapYear(2000); // "Leap Year"
+
+// Q3: triangle area
+// function triangleArea(a, b, c) {
+//     let s = (a + b + c) / 2;
+//     let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+//     return area;
+// }
+// triangleArea(3, 4, 5); // 6
+
+// Q4: average, percentage, max, min
+// function average(m1, m2, m3) {
+//     return (m1 + m2 + m3) / 3;
+// }
+// function percentage(m1, m2, m3) {
+//     return (m1 + m2 + m3) / 300 * 100;
+// }
+// function maximum(m1, m2, m3) {
+//     if (m1 > m2 && m1 > m3) return m1;
+//     if (m2 > m1 && m2 > m3) return m2;
+//     return m3;
+// }
+// function minimum(m1, m2, m3) {
+//     if (m1 < m2 && m1 < m3) return m1;
+//     if (m2 < m1 && m2 < m3) return m2;
+//     return m3;
+// }
+
+// Q5: custom indexOf
+// function myIndexOf(str, char) {
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] == char) {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+// myIndexOf("hello", "e"); // 1
+
+// Q6: delete vowels
+// function deleteVowels(sentence) {
+//     let newSentence = "";
+//     for (let i = 0; i < sentence.length; i++) {
+//         if (sentence[i] != "a" && sentence[i] != "e" && sentence[i] != "i" && sentence[i] != "o" && sentence[i] != "u") {
+//             newSentence = newSentence + sentence[i];
+//         }
+//     }
+//     return newSentence;
+// }
+// deleteVowels("hello"); // "hll"
+
+// Q7: count two vowels using switch
+// function countVowelsPair(str) {
+//     let count = 0;
+//     for (let i = 0; i < str.length - 1; i++) {
+//         switch (str[i]) {
+//             case "a": case "e": case "i": case "o": case "u":
+//                 switch (str[i + 1]) {
+//                     case "a": case "e": case "i": case "o": case "u":
+//                         count++;
+//                 }
+//         }
+//     }
+//     return count;
+// }
+// countVowelsPair("please"); // 1 (ea)
